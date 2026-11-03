@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 环境变量
+.env
+.env.*
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.iml
+
+# 模型权重与大文件
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Docker 本地资产（按要求暂不纳入版本库）
+/docker/
+
+# 系统文件
+.DS_Store
