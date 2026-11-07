@@ -14,17 +14,17 @@ logging:
 db_meta:
   host: localhost
   port: 3306
-  user: atguigu
+  user: root
   password: Atguigu.123
-  database: meta
+  database: meta2
 
 # 数据库dw的配置
 db_dw:
   host: localhost
   port: 3306
-  user: atguigu
+  user: root
   password: Atguigu.123
-  database: dw
+  database: dw2
 
 # qdrant的配置
 qdrant:
