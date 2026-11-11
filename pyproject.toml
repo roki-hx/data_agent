@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "asyncio>=4.0.0",
     "asyncmy==0.2.11",
     "cryptography==46.0.4",
     "elasticsearch[async]>=8,<9",
@@ -15,6 +16,7 @@ dependencies = [
     "langchain-deepseek==1.0.1",
     "langchain-huggingface==1.2.1",
     "langgraph==1.0.7",
+    "logger>=1.4",
     "loguru==0.7.3",
     "omegaconf==2.3.0",
     "qdrant-client==1.16.2",

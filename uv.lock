@@ -218,6 +218,15 @@ wheels = [
 ]
 
 [[package]]
+name = "asyncio"
+version = "4.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/71/ea/26c489a11f7ca862d5705db67683a7361ce11c23a7b98fc6c2deaeccede2/asyncio-4.0.0.tar.gz", hash = "sha256:570cd9e50db83bc1629152d4d0b7558d6451bb1bfd5dfc2e935d96fc2f40329b", size = 5371, upload-time = "2025-08-05T02:51:46.605Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/64/eff2564783bd650ca25e15938d1c5b459cda997574a510f7de69688cb0b4/asyncio-4.0.0-py3-none-any.whl", hash = "sha256:c1eddb0659231837046809e68103969b2bef8b0400d59cfa6363f6b5ed8cc88b", size = 5555, upload-time = "2025-08-05T02:51:45.767Z" },
+]
+
+[[package]]
 name = "asyncmy"
 version = "0.2.11"
 source = { registry = "https://pypi.org/simple" }
@@ -551,6 +560,7 @@ name = "data-agent"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "asyncio" },
     { name = "asyncmy" },
     { name = "cryptography" },
     { name = "elasticsearch", extra = ["async"] },
@@ -561,6 +571,7 @@ dependencies = [
     { name = "langchain-deepseek" },
     { name = "langchain-huggingface" },
     { name = "langgraph" },
+    { name = "logger" },
     { name = "loguru" },
     { name = "omegaconf" },
     { name = "qdrant-client" },
@@ -569,6 +580,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "asyncio", specifier = ">=4.0.0" },
     { name = "asyncmy", specifier = "==0.2.11" },
     { name = "cryptography", specifier = "==46.0.4" },
     { name = "elasticsearch", extras = ["async"], specifier = ">=8,<9" },
@@ -579,6 +591,7 @@ requires-dist = [
     { name = "langchain-deepseek", specifier = "==1.0.1" },
     { name = "langchain-huggingface", specifier = "==1.2.1" },
     { name = "langgraph", specifier = "==1.0.7" },
+    { name = "logger", specifier = ">=1.4" },
     { name = "loguru", specifier = "==0.7.3" },
     { name = "omegaconf", specifier = "==2.3.0" },
     { name = "qdrant-client", specifier = "==1.16.2" },
@@ -1608,6 +1621,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/12/4b/c91526e3038d5d586
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a8/11/4da3faa7fd20c487c4770f14aa2b4247871e787ad305c2ba528fcf0f2bcc/langsmith-0.14.17-py3-none-any.whl", hash = "sha256:0aa2c79936c93c7cea9c55656f05e21cc5da715fecbdbda439d084adc08429be", size = 940828, upload-time = "2026-11-02T00:58:43.727Z" },
 ]
+
+[[package]]
+name = "logger"
+version = "1.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/73/2f/b0d28eaa1e2c1cf64129f8da3fe701888d152677fec708cd0f13e8309e1e/logger-1.4.tar.gz", hash = "sha256:4ecac57133c6376fa215f0fe6b4dc4d60e4d1ad8be005cab4e8a702df682f8b3", size = 1187, upload-time = "2013-10-22T16:49:01.48Z" }
 
 [[package]]
 name = "loguru"
