@@ -43,5 +43,5 @@ _yaml_data = OmegaConf.load(_yaml_path)
 meta_config: MetaConfig = OmegaConf.to_object(OmegaConf.merge(MetaConfig, _yaml_data))
 
 if __name__ == "__main__":
-    print(meta_config)
-    print(meta_config.metrics[0].description)
+    # print(meta_config)
+    print(meta_config.metrics[1].relevant_columns)
