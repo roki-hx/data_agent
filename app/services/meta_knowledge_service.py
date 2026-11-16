@@ -1,7 +1,3 @@
-import asyncio
-
-from openai.types.responses import namespace_tool_param
-
 from app.conf.meta_config import meta_config, TableConfig, MetricConfig
 from app.core.log import logger
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
@@ -48,7 +44,7 @@ class MetaKnowledgeService:
     async def build(self):
         logger.info("执行构建元数据知识库业务")
         # 1. 处理表相关的信息
-        # 1.1 将表的信息和字段的信息保存到meta库（tableinfo和column_info表）
+        # 1.1 将表的信息和字段的信息保存到meta库（table_info和column_info表）
         column_infos :list[ColumnInfoMySQL]= await self._save_table_infos_to_meta_db(meta_config.tables)
         logger.info("将表的信息和字段的信息保存到meta库")
         # 1.2 对所有字段信息建立向量索引
@@ -58,11 +54,11 @@ class MetaKnowledgeService:
         await self._save_values_infos_to_es(column_infos,meta_config.tables)
         logger.info("对字段取值建立全文索引")
         # 2. 处理指标信息
-        # 2.1 将指标信息数据保存到meta库（metric_info和culumn_metric表）
+        # 2.1 将指标信息数据保存到meta库（metric_info和column_metric表）
         metric_infos :list[MetricInfoMySQL] = await self._save_metric_infos_to_mate(meta_config.metrics)
         logger.info("将指标信息数据保存到meta库")
         # 2.2 对指标信息建立向量索引
-        self._save_metic_infos_qdrant(metric_infos)
+        self._save_metric_infos_qdrant(metric_infos)
         logger.info("对指标信息建立向量索引")
 
     async def _save_table_infos_to_meta_db(self, tables:list[TableConfig])-> list[ColumnInfoMySQL]:
@@ -73,27 +69,33 @@ class MetaKnowledgeService:
                 id=table.name,
                 name=table.name,
                 role=table.role,
-                description=table.description
+                description=table.description,
             ))
+            #查表
+            column_types= await self.dw_mysql_repo.get_column_types(table.name)
             for column in table.columns:
+                values:list = await self.dw_mysql_repo.get_column_values(table.name,column.name)
                 column_infos.append(ColumnInfoMySQL(
                     id=f"{table.name}.{column.name}",
                     name=column.name,
-                    type="",
+                    type=column_types[column.name],#需要查表
                     role=column.role,
-
-
-
+                    examples=values,#需要查表
+                    description=column.description,
+                    alias=column.alias,
+                    table_id=table.name
                 ))
 
         self.meta_mysql_repo.save_table_infos(table_infos)
+        self.meta_mysql_repo.save_column_infos(column_infos)
+
         return column_infos
     async def _save_column_infos_to_qdrant(self, column_infos:list[ColumnInfoMySQL]):
         pass
 
     async def _save_values_infos_to_es(self, column_infos:list[ColumnInfoMySQL], tables:list[TableConfig]):
         pass
-    # 将指标信息数据保存到meta库（metric_info和culumn_metric表） 完成
+    # 将指标信息数据保存到meta库（metric_info和column_metric表） 完成
     async def  _save_metric_infos_to_mate(self, metrics:list[MetricConfig])-> list[MetricInfoMySQL]:
         # 收集指标信息和字段指标
         metrics_infos: list[MetricInfoMySQL] = []
@@ -119,5 +121,5 @@ class MetaKnowledgeService:
 
         return metrics_infos
 
-    def _save_metic_infos_qdrant(self, metric_infos:list[MetricInfoMySQL]):
+    def _save_metric_infos_qdrant(self, metric_infos:list[MetricInfoMySQL]):
         pass

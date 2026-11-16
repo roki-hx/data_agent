@@ -132,4 +132,4 @@ if __name__ == '__main__':
         #关闭客户端
         await dw_mysql_manager.close()
 
-    asyncio.run(test_orm1())
+    asyncio.run(test())
