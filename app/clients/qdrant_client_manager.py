@@ -44,7 +44,7 @@ if __name__ == '__main__':
                     payload={
                         "color": "red" if i % 2 == 0 else "blue",
                     },
-                    # 生成10维随机向量
+                    # 生成1024维随机向量
                     vector=[random.random() for _ in range(1024)],
                 )
                 for i in range(100)  # 创建100个向量
