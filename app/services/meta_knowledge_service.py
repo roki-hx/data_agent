@@ -223,7 +223,7 @@ class MetaKnowledgeService:
             # description要向量化
             data_dict_list.append({
                 "id": uuid.uuid4(),
-                "payload": metric_info,
+                "payload": metric_info_qdrant,
                 "embedding_text": metric_info.description,
             })
             # alias要向量化

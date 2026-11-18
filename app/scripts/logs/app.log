@@ -1,0 +1,72 @@
+2026-11-15 18:31:01.273 | INFO     | request_id -  | __main__:start_build:20 - 开始构建知识库
+2026-11-15 18:31:01.701 | INFO     | request_id -  | app.services.meta_knowledge_service:build:40 - 执行构建元数据知识库
+2026-11-15 18:31:01.701 | INFO     | request_id -  | __main__:start_build:49 - 构建成功了
+2026-11-15 22:31:23.338 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-15 22:31:23.745 | INFO     | request_id -  | app.services.meta_knowledge_service:build:45 - 执行构建元数据知识库业务
+2026-11-15 22:31:23.745 | INFO     | request_id -  | app.services.meta_knowledge_service:build:49 - 将表的信息和字段的信息保存到meta库
+2026-11-15 22:31:23.745 | INFO     | request_id -  | app.services.meta_knowledge_service:build:52 - 对所有字段信息建立向量索引
+2026-11-15 22:31:23.745 | INFO     | request_id -  | app.services.meta_knowledge_service:build:55 - 对字段取值建立全文索引
+2026-11-15 22:31:23.746 | INFO     | request_id -  | app.services.meta_knowledge_service:build:59 - 将指标信息数据保存到meta库
+2026-11-15 22:31:23.746 | INFO     | request_id -  | app.services.meta_knowledge_service:build:62 - 对指标信息建立向量索引
+2026-11-15 22:31:23.746 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
+2026-11-16 13:31:00.981 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-16 13:31:01.426 | INFO     | request_id -  | app.services.meta_knowledge_service:build:46 - 执行构建元数据知识库业务
+2026-11-16 13:31:01.426 | INFO     | request_id -  | app.services.meta_knowledge_service:build:50 - 将表的信息和字段的信息保存到meta库
+2026-11-16 13:31:01.426 | INFO     | request_id -  | app.services.meta_knowledge_service:build:53 - 对所有字段信息建立向量索引
+2026-11-16 13:31:01.426 | INFO     | request_id -  | app.services.meta_knowledge_service:build:56 - 对字段取值建立全文索引
+2026-11-16 13:31:01.427 | INFO     | request_id -  | app.services.meta_knowledge_service:build:60 - 将指标信息数据保存到meta库
+2026-11-16 13:31:01.427 | INFO     | request_id -  | app.services.meta_knowledge_service:build:63 - 对指标信息建立向量索引
+2026-11-16 13:31:01.475 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
+2026-11-16 13:34:09.920 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-16 13:34:10.308 | INFO     | request_id -  | app.services.meta_knowledge_service:build:46 - 执行构建元数据知识库业务
+2026-11-16 13:34:10.308 | INFO     | request_id -  | app.services.meta_knowledge_service:build:50 - 将表的信息和字段的信息保存到meta库
+2026-11-16 13:34:10.308 | INFO     | request_id -  | app.services.meta_knowledge_service:build:53 - 对所有字段信息建立向量索引
+2026-11-16 13:34:10.308 | INFO     | request_id -  | app.services.meta_knowledge_service:build:56 - 对字段取值建立全文索引
+2026-11-16 13:34:10.309 | INFO     | request_id -  | app.services.meta_knowledge_service:build:60 - 将指标信息数据保存到meta库
+2026-11-16 13:34:10.309 | INFO     | request_id -  | app.services.meta_knowledge_service:build:63 - 对指标信息建立向量索引
+2026-11-16 13:34:10.342 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
+2026-11-17 16:06:21.208 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 16:06:21.737 | INFO     | request_id -  | app.services.meta_knowledge_service:build:48 - 执行构建元数据知识库业务
+2026-11-17 16:06:21.926 | INFO     | request_id -  | app.services.meta_knowledge_service:build:52 - 将表的信息和字段的信息保存到meta库
+2026-11-17 16:06:21.926 | INFO     | request_id -  | app.services.meta_knowledge_service:build:55 - 对所有字段信息建立向量索引
+2026-11-17 16:06:22.371 | INFO     | request_id -  | app.services.meta_knowledge_service:build:58 - 对字段取值建立全文索引
+2026-11-17 16:06:22.372 | INFO     | request_id -  | app.services.meta_knowledge_service:build:62 - 将指标信息数据保存到meta库
+2026-11-17 16:06:22.372 | INFO     | request_id -  | app.services.meta_knowledge_service:build:65 - 对指标信息建立向量索引
+2026-11-17 16:06:22.410 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
+2026-11-17 21:19:54.682 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 21:19:55.132 | INFO     | request_id -  | app.services.meta_knowledge_service:build:48 - 执行构建元数据知识库业务
+2026-11-17 21:19:55.250 | INFO     | request_id -  | app.services.meta_knowledge_service:build:52 - 将表的信息和字段的信息保存到meta库
+2026-11-17 21:19:55.253 | ERROR    | request_id -  | __main__:start_build:60 - 构建元数据知识库失败，Cannot connect to host localhost:8081 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8081, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8081)]
+2026-11-17 21:21:29.594 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 21:21:31.097 | INFO     | request_id -  | app.services.meta_knowledge_service:build:48 - 执行构建元数据知识库业务
+2026-11-17 21:21:35.271 | INFO     | request_id -  | app.services.meta_knowledge_service:build:52 - 将表的信息和字段的信息保存到meta库
+2026-11-17 21:22:38.704 | ERROR    | request_id -  | __main__:start_build:60 - 构建元数据知识库失败，429, message='Too Many Requests', url='http://localhost:8081'
+2026-11-17 21:23:39.464 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 21:23:40.108 | INFO     | request_id -  | app.services.meta_knowledge_service:build:48 - 执行构建元数据知识库业务
+2026-11-17 21:23:40.279 | INFO     | request_id -  | app.services.meta_knowledge_service:build:52 - 将表的信息和字段的信息保存到meta库
+2026-11-17 21:38:05.468 | INFO     | request_id -  | app.services.meta_knowledge_service:build:55 - 对所有字段信息建立向量索引
+2026-11-17 21:38:07.888 | INFO     | request_id -  | app.services.meta_knowledge_service:build:58 - 对字段取值建立全文索引
+2026-11-17 21:38:07.912 | INFO     | request_id -  | app.services.meta_knowledge_service:build:62 - 将指标信息数据保存到meta库
+2026-11-17 21:38:07.913 | INFO     | request_id -  | app.services.meta_knowledge_service:build:65 - 对指标信息建立向量索引
+2026-11-17 21:38:08.375 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
+2026-11-17 21:56:44.011 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 21:56:44.551 | INFO     | request_id -  | app.services.meta_knowledge_service:build:49 - 执行构建元数据知识库业务
+2026-11-17 21:56:44.718 | INFO     | request_id -  | app.services.meta_knowledge_service:build:53 - 将表的信息和字段的信息保存到meta库
+2026-11-17 21:58:16.560 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-17 21:58:17.230 | INFO     | request_id -  | app.services.meta_knowledge_service:build:49 - 执行构建元数据知识库业务
+2026-11-17 21:58:17.386 | INFO     | request_id -  | app.services.meta_knowledge_service:build:53 - 将表的信息和字段的信息保存到meta库
+2026-11-17 22:10:23.607 | INFO     | request_id -  | app.services.meta_knowledge_service:build:56 - 对所有字段信息建立向量索引
+2026-11-17 22:10:24.806 | INFO     | request_id -  | app.services.meta_knowledge_service:build:59 - 对字段取值建立全文索引
+2026-11-17 22:10:24.829 | INFO     | request_id -  | app.services.meta_knowledge_service:build:63 - 将指标信息数据保存到meta库
+2026-11-17 22:10:27.066 | ERROR    | request_id -  | __main__:start_build:60 - 构建元数据知识库失败，1 validation error for PointStruct
+payload
+  Input should be a valid dictionary [type=dict_type, input_value=<app.models.mysql.metric_...L object at 0x10fd4cc50>, input_type=MetricInfoMySQL]
+    For further information visit https://errors.pydantic.dev/2.14/v/dict_type
+2026-11-18 12:28:33.867 | INFO     | request_id -  | __main__:start_build:29 - 开始构建知识库
+2026-11-18 12:28:34.957 | INFO     | request_id -  | app.services.meta_knowledge_service:build:49 - 执行构建元数据知识库业务
+2026-11-18 12:28:35.293 | INFO     | request_id -  | app.services.meta_knowledge_service:build:53 - 将表的信息和字段的信息保存到meta库
+2026-11-18 12:43:47.042 | INFO     | request_id -  | app.services.meta_knowledge_service:build:56 - 对所有字段信息建立向量索引
+2026-11-18 12:43:48.301 | INFO     | request_id -  | app.services.meta_knowledge_service:build:59 - 对字段取值建立全文索引
+2026-11-18 12:43:48.331 | INFO     | request_id -  | app.services.meta_knowledge_service:build:63 - 将指标信息数据保存到meta库
+2026-11-18 12:43:55.645 | INFO     | request_id -  | app.services.meta_knowledge_service:build:66 - 对指标信息建立向量索引
+2026-11-18 12:43:56.212 | INFO     | request_id -  | __main__:start_build:58 - 元数据知识库构建成功
