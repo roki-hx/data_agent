@@ -54,3 +54,13 @@ class ColumnQdrantRepository:
                     for i in range(len(batch_ids))
                 ],
             )
+    #搜索查询方法
+    async def search(self,keyword_vector:list[float]) ->list[ColumnInfoQdrant]:
+        # 搜索向量： 查找最相似的10个向量
+        results = await self.client.query_points(
+            collection_name= self.collection_name,
+            query=keyword_vector,
+            limit=9,  # 返回的最相似的9个向量
+            score_threshold=0.6,  # 向量相似度阈值，低于该阈值的向量将被忽略
+        )
+        return [ColumnInfoQdrant(**result.payload)  for result in results.points] #解包一个字典 放在一个对象中

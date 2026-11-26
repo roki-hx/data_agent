@@ -32,9 +32,9 @@ def extract_keywords(state:DataAgentState,runtime:Runtime[DataAgentContext]):
         result :list[str] = extract_tags(query,topK=5,allowPOS=allow_pos)
         logger.info(f"提取的关键字为：{result}")
         # 将原始的提问也加入keys中  要利用set去重，防止query就在resuLt中
-        keyswords = list(set(result + [query]))
+        keywords = list(set(result + [query]))
 
-        logger.info(f"抽取关键字完成：{keyswords}")
+        logger.info(f"抽取关键字完成：{keywords}")
         return {"keywords":result}
     except Exception as e:
         logger.error(f"提取关键词失败：f{str(e)}")
