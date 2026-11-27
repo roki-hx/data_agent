@@ -8,6 +8,9 @@ def merge_retrieved_info(state:DataAgentState,runtime:Runtime[DataAgentContext])
     #自定义输出
     runtime.stream_writer("合并召回")
     try:
+        recall_columns = state["ColumnInfoQdrant"]
+        recall_metrics= state["MetricInfoQdrant"]
+        recall_values= state["ValueInfoES"]
         return {}
     except Exception as e:
         logger.error(f"合并召回失败：f{str(e)}")
